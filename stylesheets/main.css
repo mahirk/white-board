@@ -1,0 +1,76 @@
+body {
+    width: 100%;
+    font-family: 'Raleway', calibri;
+    overflow-x:hidden;
+    margin: 0;
+    height:cover;
+}
+
+#menu {
+  display: inline-block;
+  width: 7%;
+  float:left;
+  background: url('/images/bg3.svg');
+  position:relative;
+}
+
+#menu div {
+  margin: 15% 0;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  width: 90%;
+
+}
+
+#user{
+  position:absolute;                  /* added */
+  bottom:0;                           /* added */
+  left:0;
+}
+
+#menu div:hover, #menu div:active, .curr {
+  cursor: pointer;
+  text-shadow: 10px 10px 10px #333;
+
+}
+
+span {
+  font-size: 15px;
+}
+
+#draw div, #eraser div {
+  display: none;
+}
+
+#draw:hover div, #eraser:hover div {
+  display:block;
+  position: absolute;
+  font-size: 12px;
+  background: rgba(0,0,0, 0.6);
+  margin: 0px 40%;
+  z-index: 100;
+  display:inline-block;
+  width: 220px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#submenu input {
+  display:inline-block;
+  border-radius: 5px;
+  width: 95px;
+  padding: 3px;
+}
+
+#drawboard {
+  border: 5px solid #b69b4c;
+  outline: 8px solid #825201;
+  margin-top: 7px;
+  display: inline-block;
+  position: absolute;
+}
+
+#drawboard:active {
+  cursor: crosshair;
+}
